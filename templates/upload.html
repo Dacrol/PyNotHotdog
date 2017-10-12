@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Upload</title>
+
+    <style type="text/css">
+        {% if img %}
+            {% if res == True %}
+            body { background-color: #00FF00; }
+            {% elif res == False %}
+            body { background-color: #FF0000; }
+            {%endif%}
+        {% endif %}
+        img {max-height: 350px; }
+    </style>
+</head>
+
+<body>
+    <p>Upload success!</p>
+    <img src="img/{{ img }}"> 
+    {% if (res == True) %}
+    <h1>Hotdog!</h1>
+    {% elif (res == False) %}
+    <h2>Not hotdog!</h2>
+    {% endif %}
+    <a href="/">&lt;</a>
+</body> 
+
+</html>

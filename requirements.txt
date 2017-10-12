@@ -1,0 +1,7 @@
+requests 
+numpy
+matplotlib 
+opencv-python
+mxnet
+flask
+flask-uploads
